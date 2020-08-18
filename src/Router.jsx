@@ -1,25 +1,21 @@
-import React from "react";
+import React from 'react'
 import {
     BrowserRouter,
     Switch,
-    Route
-} from "react-router-dom";
+    Route,
+} from 'react-router-dom'
 
-import Album from './pages/album'
-import Home from './pages/home'
-import Photo from './pages/photo'
+import Blog from './pages/Blog'
+import Post from './pages/Post'
 
 const Router = () => (
     <BrowserRouter>
         <Switch>
-            <Route path="/album/:albumId">
-                <Album />
-            </Route>
-            <Route path="/photo">
-                <Photo />
+            <Route path="/post">
+                <Post />
             </Route>
             <Route path="/" exact>
-                <Home />
+                <Blog />
             </Route>
         </Switch>
     </BrowserRouter>
